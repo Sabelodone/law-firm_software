@@ -1,0 +1,62 @@
+/* Footer.css */
+.footer {
+    background-color: #ffffff; /* White background color */
+    color: #000000; /* Black text color */
+    padding: 4rem 0; /* Increase vertical padding for better spacing */
+    text-align: center; /* Center text */
+    font-size: 1.25rem; /* Increase font size */
+}
+
+.footer a {
+    color: #000000; /* Black text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.25rem; /* Increase font size for links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    margin-top: 2rem; /* Increase space above social icons */
+}
+
+.social-icons a {
+    color: #000000; /* Black color for icons */
+    font-size: 2rem; /* Larger icon size */
+    margin: 0 1rem; /* Increase space between icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #333333; /* Slightly lighter black on hover */
+}
+
+hr {
+    border: dotted 1px;
+    margin: 2rem 0; /* Increase space around horizontal rule */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social-icons {
+        margin-top: 1rem; /* Reduce space on smaller screens */
+    }
+
+    .social-icons a {
+        font-size: 1.75rem; /* Slightly smaller icons on smaller screens */
+        margin: 0 0.75rem; /* Reduce space between icons */
+    }
+
+    .footer {
+        font-size: 1rem; /* Slightly smaller font size on smaller screens */
+    }
+
+    .footer a {
+        font-size: 1rem; /* Slightly smaller font size for links on smaller screens */
+    }
+
+    hr {
+        margin: 1rem 0; /* Slightly reduce space around horizontal rule on smaller screens */
+    }
+}

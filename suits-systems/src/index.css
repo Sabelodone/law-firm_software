@@ -1,0 +1,35 @@
+/* Importing Inter font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Apply Inter font globally */
+html, body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Padding for different sections */
+.landing-page {
+  padding: 100px 1rem; /* Adjusted padding for responsiveness */
+}
+
+.features-section,
+.pricing-section,
+.contact-section,
+.footer {
+  padding: 60px 1rem; /* Adjusted padding for responsiveness */
+}
+
+/* Footer Styling */
+.footer {
+  background: #343a40;
+  color: white;
+  text-align: center; /* Center align text in footer */
+}
+
+/* Ensure full width for section containers */
+.landing-page, .features-section, .pricing-section, .contact-section {
+  max-width: 100%; /* Ensure sections take full width */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}

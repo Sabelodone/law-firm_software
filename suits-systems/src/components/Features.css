@@ -1,0 +1,134 @@
+.features-section {
+    background-color: #f8f9fa; /* Adjust as needed */
+    padding: 4rem 1rem; /* Adjust padding for smaller screens */
+  }
+  
+  .features-heading {
+    font-size: 3rem; /* Increase font size for the heading */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 1rem; /* Decrease space below heading to fit better with paragraph */
+    color: #333;
+  }
+  
+  .features-subheading {
+    font-weight: bold;
+    font-size: 1.25rem; /* Adjust font size to be smaller than the heading */
+    text-align: center; /* Center text alignment */
+    margin: 0 0 2rem; /* Add margin to separate from other elements */
+  }
+  
+  .features-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .feature-number {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+  }
+  
+  .feature-button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .icon {
+    fill: #007bff;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .feature-content {
+    padding: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .features-heading {
+      font-size: 2rem;
+    }
+  
+    .features-subheading {
+      font-size: 1rem;
+    }
+  
+    .feature-card {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .feature-number {
+      font-size: 1.25rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-heading {
+      font-size: 1.75rem;
+    }
+  
+    .features-subheading {
+      font-size: 0.875rem;
+    }
+  
+    .feature-card {
+      max-width: 100%;
+      padding: 0.75rem;
+    }
+  
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .feature-number {
+      font-size: 1rem;
+      height: 2rem;
+      line-height: 2rem;
+      width: 2rem;
+    }
+  }
+  

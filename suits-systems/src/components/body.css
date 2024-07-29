@@ -1,0 +1,105 @@
+/* General Body Styling */
+.body-section {
+  padding: 1rem; /* Add padding around the entire section */
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of content */
+  margin-bottom: 2rem; /* Spacing between rows */
+}
+
+/* Text Content Styling */
+.text-content {
+  padding: 1rem;
+  text-align: center; /* Center-align text content */
+}
+
+.text-content h3 {
+  font-size: 1.75rem; /* Font size for headings */
+  margin-bottom: 0.5rem; /* Space below heading */
+}
+
+.text-content p {
+  font-size: 1rem; /* Font size for paragraph text */
+  margin-bottom: 1rem; /* Space below paragraph */
+}
+
+/* Image Content Styling */
+.image-content {
+  display: flex; /* Ensure flex container for better alignment */
+  justify-content: center; /* Center-align images horizontally */
+  padding: 1rem; /* Add padding around the container */
+}
+
+.image-content img {
+  max-width: 100%; /* Ensure image takes full width of its container */
+  height: auto;
+  border-radius: 0.75rem; /* Rounded corners */
+  object-fit: cover; /* Cover the entire image area */
+  object-position: center; /* Center the image */
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .text-content {
+    font-size: 1.2rem; /* Adjust font size for larger screens */
+    padding: 2rem; /* Add padding for larger screens */
+  }
+
+  .text-content h3 {
+    font-size: 2.5rem; /* Adjust font size for h3 on larger screens */
+    margin-bottom: 1rem; /* Space below h3 */
+  }
+
+  .text-content p {
+    font-size: 1.25rem; /* Adjust font size for p on larger screens */
+    margin-bottom: 1.5rem; /* Space below p */
+  }
+
+  .image-content {
+    padding: 2rem; /* Increase padding on larger screens */
+  }
+
+  .image-content img {
+    max-width: 85%; /* Ensure consistent image size */
+  }
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .text-content {
+    order: 2; /* Ensure text content appears below the image */
+    text-align: center;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin: 0; /* Remove margin to prevent overlap */
+  }
+
+  .text-content h3 {
+    font-size: 1.5rem; /* Adjust font size for h3 on smaller screens */
+    margin-top: 1rem; /* Add margin above h3 for separation from the image */
+    margin-bottom: 0.5rem; /* Space below h3 */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* Adjust font size for p on smaller screens */
+    margin-bottom: 1rem; /* Space below p */
+  }
+
+  .image-content {
+    order: 1; /* Ensure image content appears above the text */
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin: 0; /* Remove margin to prevent overlap */
+    width: 100%; /* Ensure full width */
+  }
+
+  .image-content img {
+    max-width: 100%; /* Responsive image size */
+  }
+}

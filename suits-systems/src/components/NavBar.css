@@ -1,0 +1,55 @@
+/* NavigationBar.css */
+.navbar {
+  padding: 0.5rem 1rem;
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  top: 0; /* Stick to the top of the viewport */
+  width: 100%; /* Full width of the viewport */
+  z-index: 10; /* Ensure it's on top of other content */
+  background-color: rgba(253, 252, 252, 0.9); /* Slightly more opaque background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black; /* Brand text color */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Aligns the navigation links to the right */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+  color: black; /* Default link color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: goldenrod; /* Lighter color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center; /* Center align on smaller screens */
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    margin-left: 0; /* Reset margin-left on small screens */
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 0; /* Remove margin on small screens */
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Add padding to the top of the body content */
+body {
+  padding-top: 60px; /* Adjust based on the height of the navbar */
+}
