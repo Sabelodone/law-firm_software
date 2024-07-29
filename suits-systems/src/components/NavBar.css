@@ -1,12 +1,17 @@
 /* NavigationBar.css */
 .navbar {
   padding: 0.5rem 1rem;
-  position: fixed; /* Fix the navbar to the top of the viewport */
+  position: absolute; /* Fix the navbar to the top of the viewport */
   top: 0; /* Stick to the top of the viewport */
   width: 100%; /* Full width of the viewport */
   z-index: 10; /* Ensure it's on top of other content */
   background-color: rgba(253, 252, 252, 0.9); /* Slightly more opaque background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar.show {
+  background-color: rgba(253, 252, 252, 1); /* Full opaque background when menu is open */
 }
 
 .navbar-brand {
@@ -30,6 +35,27 @@
   color: goldenrod; /* Lighter color on hover */
 }
 
+/* Dropdown Styles */
+.nav-dropdown .dropdown-menu {
+  min-width: 100px; /* Set a minimum width for the dropdown menu */
+  border-radius: 8px; /* Rounded corners for dropdown items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  background-color: #fff; /* Background color for dropdown */
+}
+
+.nav-dropdown .dropdown-item {
+  padding: 10px 15px; /* Adjust padding for better spacing */
+  font-size: 0.9rem; /* Font size for dropdown items */
+}
+
+.nav-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light background color on hover */
+}
+
+.nav-dropdown .dropdown-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.125); /* Divider style */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-collapse {
@@ -46,6 +72,10 @@
     font-size: 1.1rem;
     margin-left: 0; /* Remove margin on small screens */
     margin-bottom: 0.5rem;
+  }
+
+  .nav-dropdown .dropdown-menu {
+    min-width: 100%; /* Make dropdown full width on smaller screens */
   }
 }
 
