@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import useState from React
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import SignInForm from './SignInForm'; // Adjust the import path as needed
 import SignUpForm from './SignUpForm'; // Adjust the import path as needed
 import LogoutForm from './LogOutForm'; // Adjust the import path as needed
 import './NavBar.css'; // Ensure the correct path to your CSS file
 
-const NavigationBar = () => {
+const NavigationBar = ({ onMyWorkClick }) => {
   const [showNav, setShowNav] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
@@ -30,13 +30,15 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home" onClick={handleClose}>Home</Nav.Link>
-            <Nav.Link href="#features" onClick={handleClose}>Features</Nav.Link>
+            <Nav.Link href="#landing-page" onClick={handleClose}>Home</Nav.Link>
+            <Nav.Link href="#body" onClick={handleClose}>Body</Nav.Link>
             <Nav.Link href="#pricing" onClick={handleClose}>Pricing</Nav.Link>
+            <Nav.Link href="#features" onClick={handleClose}>Features</Nav.Link>
             <Nav.Link href="#contact" onClick={handleClose}>Contact</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown" className="nav-dropdown">
               <NavDropdown.Item onClick={handleShowSignIn}>Sign In</NavDropdown.Item>
               <NavDropdown.Item onClick={handleShowSignUp}>Sign Up</NavDropdown.Item>
+              <NavDropdown.Item onClick={onMyWorkClick}>My Work</NavDropdown.Item> {/* Updated My Work button */}
               <hr />
               <NavDropdown.Item onClick={handleShowLogout}>Logout</NavDropdown.Item>
             </NavDropdown>
@@ -53,3 +55,4 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
