@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <hr />
       <Container className="text-center">
-        <p className="mb-2">© 2023 All rights reserved. SUITS SYSTEMS</p>
+        <p className="mb-2">© 2023 All rights reserved. Soft Techs</p>
         <p className="mb-3">
           <a href="#home" className="text-black">Terms & Privacy</a>
         </p>
